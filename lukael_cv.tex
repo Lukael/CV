@@ -1,612 +1,397 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Wenneker Resume/CV
-% LaTeX Template
-% Version 1.1 (19/6/2016)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
-% Vel (vel@LaTeXTemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------
+% Resume in LateX
+% Author : Jaewoo Jung
+% License : MIT
+% Reference : https://github.com/sb2nov/resume
+%------------------------
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
 
-\documentclass[a4paper,12pt]{memoir} % Font and paper size
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-\input{structure.tex} % Include the file specifying document layout and packages
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION 
-%----------------------------------------------------------------------------------------
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-\userinformation{ % Set the content that goes into the sidebar of each page
-\begin{flushright}
-\includegraphics[width=1.0\columnwidth]{profile_photo.jpg}\\[\baselineskip] % Your photo
-\Large
-Jaewoo Jung \\ % Your name
-\hypersetup{urlcolor=cyan}
-\small
-\href{mailto:dev@lukael.kr}{\nolinkurl{dev@lukael.kr}} \\ % Your email address
-\url{https://lukael.kr} \\ % Your URL
-\Sep % Some whitespace
-\textbf{Address} \\
-Seoul,
-Republic of Korea \\ % Address 3
-\Sep
-\textbf{Update} \\
-2024-11-18
-\vfill % Whitespace under this block to push it up under the photo
-\end{flushright}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
 }
 
-%----------------------------------------------------------------------------------------
+\newcommand{\listItem}[1]{
+  \item\small{
+  {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\highlightSubheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        #1 & #2 \\
+        \multicolumn{2}{p{0.97\textwidth}}{\small #3}%
+    \end{tabular*}\vspace{-5pt}
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\email}{dev@lukael.kr}
+\newcommand{\home}{https://lukael.kr}
 
 \begin{document}
 
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-%----------------------------------------------------------------------------------------
-%	HEADING
-%----------------------------------------------------------------------------------------
-
-\cvheading{Jaewoo Jung} % Large heading - your name
-
-\cvsubheading{AI/ML Engineer} % Subheading - your occupation/specialization
-
-% %----------------------------------------------------------------------------------------
-% %	ABOUT ME
-% %----------------------------------------------------------------------------------------
-
-% \aboutme{About Me}
-% {}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\CVSection{Education}
-
-%------------------------------------------------
-
-\CVItem{2020 - 2023, Yonsei University}{Ph.D Candidate in Electrical and Electronic Engineering}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2015 - 2020, Yonsei University}{B.S. in Electrical and Electronic Engineering}
-
-%------------------------------------------------
-
-\CVItem{2013 - 2015, Changwon Science High School}{Chemistry}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\CVSection{Experience}
-
-%------------------------------------------------
-
-\CVItem{Aug 2023 - Present, \textit{Research Engineer}, \href{https://modi.luxrobo.com/}{\textit{Luxrobo}}}{
-Detailed achievements:
-\begin{itemize}
-	\item MODI Factory
-	\begin{itemize}
-		\item Electronic Design Automation
-		\item Golang
-		\item MySQL
-		\item Reinforcement Learning
-		\item Graph Neural Network
-	\end{itemize}
-\end{itemize}
-}
-\Sep
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{Mar 2020 - Aug 2023, \textit{Graduate Student}, \href{https://biomedia.yonsei.ac.kr}{\textit{Optical Imaging Systems Laboratory in Yonsei University}}}{
-Detailed achievements:
-\begin{itemize}
-	\item Human-Biology Interaction
-	\begin{itemize}
-		\item Biotic Games
-	\end{itemize}
-
-	\item Lensless Microscopy
-	\begin{itemize}
-		\item Digital In-line Holography
-	\end{itemize}
-	
-	\item Lensless Imaging
-	\begin{itemize}
-		\item Deep Learning for Image Reconstruction
-		\item Model based Deep Learning Network
-	\end{itemize}
-\end{itemize}
-}
-\Sep
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{Jul 2019 - Feb 2020, \textit{Engineer, Co-Founder}, \textit{Toky (StartUp)}}{
-Detailed achievements:
-\begin{itemize}
-	\item Voice recognition kiosk(Prototype)
-	\begin{itemize}
-		\item Voice recognition
-	\end{itemize}
-\end{itemize}
-}
-\Sep
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{Jan 2019 - Feb 2020, \textit{Internship}, \href{https://biomedia.yonsei.ac.kr}{\textit{Optical Imaging Systems Laboratory in Yonsei University}}}{
-Detailed achievements:
-\begin{itemize}
-	\item Human-Biology Interaction
-	\begin{itemize}
-		\item Biotic Games
-	\end{itemize}
-	\item Microscopy
-	\begin{itemize}
-		\item Digital In-line Holography
-	\end{itemize}
-\end{itemize}
-}
-\Sep
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-%------------------------------------------------
-
-\CVItem{Aug 2016 - Dec 2018, \textit{Internship}, \href{http://cog.yonsei.ac.kr/}{\textit{Biological Cybernetics Laboratory\\ in Yonsei University}}}{
-Detailed achievements:
-\begin{itemize}
-	\item Swarm robotics \href{https://lukael.github.io/CV/doc/Various Swarm Behavior Inspired by Nature Using Vibration Locomotion Robots.pdf}{(Capstone Design)}
-	\begin{itemize}
-		\item Hardware
-		\begin{itemize}
-			\item FreeRTOS
-			\item Wi-Fi
-			\item Bluetooth
-			\item Vibration Control
-		\end{itemize}
-		\item Software
-		\begin{itemize}
-			\item Formation
-			\item Charging system
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-}
-\Sep
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{Mar 2017 - Dec 2017, \textit{Research Engineer}, \href{https://modi.luxrobo.com/}{\textit{Luxrobo}}}{
-Detailed achievements:
-\begin{itemize}
-	\item Network Module Firmware(ESP32)
-	\begin{itemize}
-		\item FreeRTOS
-		\item Wi-Fi
-		\item BLE
-		\item USART
-	\end{itemize}
-
-	\item OS Development
-	\begin{itemize}
-		\item RTOS research
-		\item Contiki OS
-	\end{itemize}
-
-	\item Bluetooth 5
-	\begin{itemize}
-		\item Nordic nRF52DK
-		\item Mesh Network
-	\end{itemize}
-
-	\item NLP
-	\begin{itemize}
-		\item Chatscript
-		\item Slack-Chatscript Linkage(Python)
-	\end{itemize}
-
-\end{itemize}
-}
-\Sep
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{Jan 2017 - Dec 2017, \textit{President}, \href{https://sbtmlab.club/}{\textit{SBTM}}}
-{Robot club in Yonsei University}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-
-\CVSection{Software Development Skills}
-
-%------------------------------------------------
-
-\CVItem{Programming}
-{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-\bluebullet C/C++ &  \bluebullet Python & \bluebullet MATLAB\\
-\end{tabular}}
-
-%------------------------------------------------
-
-\CVItem{Computer Software}
-{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-\bluebullet SketchUp &  \bluebullet EasyEDA & \bluebullet Git\\
-\end{tabular}}
-
-%------------------------------------------------
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\CVSection{Publications}
-
-{K. Lee, K. C. Lee, \textbf{J. Jung}, H. Chae, and S. A. Lee, “High-resolution display screen as programmable illumination for Fourier ptychography.” Optics and Lasers in Engineering, 177, 108121, 2024.}
-
-\Sep
-
-{K. C. Lee, J. Bae, N. Baek, \textbf{J. Jung}, W. Park, and S. A. Lee, “Design and single-shot fabrication of lensless cameras with arbitrary point spread functions,” Optica, vol. 10, no. 1, pp. 72–80, 2023.}
-
-\Sep
-
-{C. Yi, \textbf{J. Jung,} J. Im, K. C. Lee, E. Chung, and S. A. Lee, “Single-shot temporal speckle correlation imaging using rolling shutter image sensors,” Optica, vol. 9, no. 11, pp. 1227–1237, 2022.}
-
-\Sep
-
-{N. Baek, Y. Lee, T. Kim, \textbf{J. Jung,} and S. A. Lee, “Lensless polarization camera for single-shot full-stokes imaging,” APL Photonics, 2022.}
-
-\Sep
-
-{Y. Lee, H. Chae, K. C. Lee, N. Baek, T. Kim, \textbf{J. Jung,} and S. A. Lee, “Fabrication of integrated lensless cameras via uv-imprint lithography,” IEEE Photonics Journal, vol. 14, no. 2, pp. 1–8, 2022.}
-
-\Sep
-
-{K. C. Lee, K. Lee, \textbf{J. Jung,} S. H. Lee, D. Kim, and S. A. Lee, “A smartphone-based fourier ptychographic microscope using the display screen for illumination,” ACS Photonics, vol. 8, no. 5, pp. 1307–1315, 2021}
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	Conference presentation
-%----------------------------------------------------------------------------------------
-
-\CVSection{Conference Presentation(Selected)}
-
-%------------------------------------------------
-
-\CVItem{2023, \textit{Poster}, IEEE/IEIE, ICEIC}
-{\textbf{Jaewoo Jung}, Yujin Lee, Seung Ah Lee, \textit{Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging}}
-%------------------------------------------------
-
-
-%------------------------------------------------
-
-\CVItem{2022, \textit{Poster}, Advanced Biophotonics Conference Optical Society of Korea}
-{\textbf{Jaewoo Jung}, Yujin Lee, Seung Ah Lee, \textit{Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging}}
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2022, \textit{Oral}, IEEE Region 10 Conference}
-{\textbf{Jaewoo Jung}, Tae Young Kim, Donggeon Bae, Ernest K. Ryu, Seung Ah Lee, \textit{Image Reconstruction in Lensless Cameras with Unrolled Optimization Algorithms}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2022, \textit{Oral}, 30th ACM International Conference on Multimedia}
-{Kyungwon Lee, Yu-Kyung Jang, \textbf{Jaewoo Jung}, Dong Hwan Kim, Hyun Jean Lee, Seung Ah Lee, \textit{EuglPollock: Rethinking Interspecies Collaboration through Art Making}}
-
-%------------------------------------------------
-
-
-%------------------------------------------------
-
-\CVItem{2022, \textit{Poster}, Gorden Research Conference Image Science}
-{\textbf{Jaewoo Jung}, Donggeon Bae, Kyungchul Lee, Nakkyu Baek, Tae Young Kim, Ernest K. Ryu, Seung Ah Lee, \textit{Deep Learning Approaches for Image Reconstruction in Lensless Cameras}}
-
-%------------------------------------------------
-
-
-%------------------------------------------------
-
-\CVItem{2021, \textit{Oral}, IEEE/IEIE ICCE-ASIA}
-{\textbf{Jaewoo Jung}, Tae Young Kim, Donggeon Bae, Ernest K. Ryu, Seung Ah Lee, \textit{Image Reconstruction in Lensless Cameras with Unrolled Optimization Algorithms}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2021, \textit{Poster}, Optics and Photonics Congress}
-{\textbf{Jaewoo Jung}, Tae Young Kim, Donggeun Bae, Ernest K. Ryu, Seung Ah Lee, \textit{Unrolled ADMM for Image Reconstruction in Lensless Cameras}}
-
-%------------------------------------------------
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-%------------------------------------------------
-
-\CVItem{2020, \textit{Extended Abstracts(Demo)}, ACM Conference on Human Factors in Computing Systems (CHI)}
-{Kyungwon Lee, \textbf{Jaewoo Jung}, Seung Ah Lee, \textit{MicroAquarium: An immersive and interactive installation with living microorganisms}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2020, \textit{Oral}, IEEE/IEIE ICCE-ASIA}
-{Donggeon Bae, \textbf{Jaewoo Jung}, Nakkyu Baek, Seung Ah Lee \textit{Lensless imaging with an end-to-end deep neural network}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2018, ICROS}
-{Minchul Kim, \textbf{Jaewoo Jung}, DaeEun Kim, \textit{Swarm Robots Using Vibration Motor Control}}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-\CVSection{Patents}
-
-%------------------------------------------------
-
-{S. A. Lee, K. C. Lee, N. Baek, W. Park, J.H. Bae, J.H. and \textbf{J. Jung}, Apparatus and method for manufacturing phase masks for lens‐less camera, US Patent Application, 17/733,114}
-
-%------------------------------------------------
-
-\Sep
-
-%----------------------------------------------------------------------------------------
-%	AWARDS
-%----------------------------------------------------------------------------------------
-
-\CVSection{Awards}
-
-%------------------------------------------------
-
-\CVItem{2022, \textit{Silver Awards}, 28th Samsung Humantech Paper Awards}
-{Kyung Chul Lee, Nakkyu Baek, \textbf{Jaewoo Jung}, Junghyun Bae, Seung Ah Lee, Wook Park, \textit{Design and Fabrication of Custom Phase-Masks for Ultra-Thin Lensless Camera}}
-
-%------------------------------------------------
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-\Sep
-
-%----------------------------------------------------------------------------------------
-%	Competitions
-%----------------------------------------------------------------------------------------
-
-\CVSection{Competitions}
-%------------------------------------------------
-
-\CVItem{2019, \href{https://www.kofac.re.kr/web/contents/openBusiness1-2.do?schM=view&id=10737}{\textit{Undergraduate Research Program}}, KOFAC}
-{\textit{High speed lensless camera for microsaccades measurement}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2019, \href{http://mgreencar.co.kr/}{\textit{International Student Car Competition}}, KTSA}
-{\textit{Autonomous driving Cart}\\\textcolor{orange}{4th Awards}\\{Vision Team}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2018, \href{http://mgreencar.co.kr/}{\textit{International Student Car Competition}}, KTSA}
-{\textit{Autonomous driving Cart}\\\textcolor{orange}{2nd Awards}\\{LIDAR Team}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2017, \href{http://race.acelab.org/}{\textit{Smart Model Car Competition}}, Hanyang University}
-{\textit{Autonomous driving Model Car}\\{Team Leader, Hardware Engineer}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2016, \href{http://race.acelab.org/}{\textit{Smart Model Car Competition}}, Hanyang University}
-{\textit{Autonomous driving Model Car}\\{Hardware Engineer}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2016, \href{http://www.koreauav.com/}{\textit{Korea Robot Aircraft Competition}}, KAIA}
-{\textit{Autonomous driving Quadcopter}\\{Team Leader, Hardware Engineer}}
-
-%------------------------------------------------
-
-
-%------------------------------------------------
-
-\CVItem{2014, \href{https://www.gnse.kr/bbs.php?id=gnse32&num=2}{\textit{Student Science Invention Competition}}, GNSE}
-{\textit{Mono/Stereo Earphone}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2014, \textit{ISEF-K}, KOFAC}
-{\textit{Study on Gas phase Adsorption of Toxic substances on ES, ESM and Filter}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2014, \href{https://www.gnse.kr/bbs.php?id=gnse31&num=1}{\textit{Science Exhibition}}, GNSE}
-{\textit{Measuring Chemical reaction rate using Smartphone}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2014, \textit{Steam R\&E Festival}, KOFAC}
-{\textit{Smartphone Application for Chemistry Experiment}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2013, \href{https://www.gnse.kr/bbs.php?id=gnse32&num=2}{\textit{Student Science Invention Competition}}, GNSE}
-{\textit{Easy Bookbinding Tape Cutter}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2013, \textit{Student Creativity Festival}, GNE}
-{\textit{Between Ventilation and Insulation}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2013, \href{http://www.eswcontest.com}{\textit{Embedded Software Contest}}, KESSIA}
-{\textit{Minesweeper Robot using LEGO Mindstorm}\\{Hardware Engineer}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2013, \textit{R\&E Festival}, KOSAF}
-{\textit{Develop Filters made from ESM's Toxic substances Absorptive Ability}}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-%----------------------------------------------------------------------------------------
-%	Plays
-%----------------------------------------------------------------------------------------
-
-\CVSection{Plays}
-
-%------------------------------------------------
-
-\CVItem{2019, \href{https://github.com/SBTMLab/CoreXY}{\textit{Core-XY Autonomous Chess board}}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2018, \href{https://github.com/Lukael/Gyro_multi}{\textit{Localization using multiple Gyroscope}}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2016, \textit{Humanoid(KHR-1)}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2016, \textit{LED cube(8$\times$8$\times$8)}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2016, \textit{Robot Soccer}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2015, \href{https://github.com/IntelliPilot/IntelliPilot}{\textit{Quadcopter}}}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\CVItem{2015, \textit{Guitar Effector}}
-
-%------------------------------------------------
-
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS
-%----------------------------------------------------------------------------------------
-
-\CVSection{Interests}
-
-%------------------------------------------------
-
-\CVItem{Professional}
-{NAS, DevOps, Robotics}
-
-%------------------------------------------------
-
-\CVItem{Personal}
-{Bass guitar, Reading, Tea}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
-
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{\home}{\Large Jaewoo Jung}} & Email: \href{mailto:\email}{\email}\\
+  \href{\home}{\home} & \textit{Updated: \today} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Yonsei University}{Seoul, Korea}
+      {Ph.D Candidate in Electrical and Electronics Engineering}
+      {2020 -- Present}
+    \resumeSubheading
+      {Yonsei University}{Seoul, Korea}
+      {B.S. in Electrical and Electronics Engineering}
+      {2015 -- 2020}
+    \resumeSubheading
+      {Changwon Science High School}{Changwon, Korea}
+      {Chemistry, Early graduation}
+      {2013 -- 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Seoul National University}{Seoul, Korea}
+      {Research Engineer, Imaging Intelligence Laboratory (Prof. Seung Ah Lee)}{July 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Lensless Imaging}
+          {: deep learning for image reconstruction, model based deep learning network}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LUXROBO Ltd.}{Seoul, Korea}
+      {Research Engineer}{Aug 2023 -- June 2025}
+      \resumeItemListStart
+        \resumeItem{MODI Factory}
+          {: Electronic Design Automation, Golang Backend, MySQL database, Reinforcement Learning, MLOps}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Yonsei University}{Seoul, Korea}
+      {Graduate Research Assistant, Optical Imaging Systems Laboratory (Prof. Seung Ah Lee)}{Mar 2020 -- Aug 2023}
+      \resumeItemListStart
+        \resumeItem{Lensless Microscopy}
+          {: digital in-line holography}
+        \resumeItem{Lensless Imaging}
+          {: deep learning for image reconstruction, model based deep learning network}
+      \resumeItemListEnd
+    
+    \resumeSubSubheading
+      {Internship, Optical Imaging Systems Laboratory (Prof. Seung Ah Lee)}{Jan 2019 -- Feb 2020}
+      \resumeItemListStart
+        \resumeItem{Human-Biology Interaction}
+          {: biotic games}
+        \resumeItem{Lensless Microscopy}
+          {: digital in-line holography}
+    
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Toky}{Seoul, Korea}
+      {Co-Founder, Engineer}{Jul 2019 -- Feb 2020}
+      \resumeItemListStart
+        \resumeItem{Voice recognition kiosk}
+          {: voice recognition, embedded software}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Yonsei University}{Seoul, Korea}
+      {Internship, Biological Cybernetics Laboratory (Prof. Dae Eun Kim)}{Aug 2016 -- Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Swarm robotics}
+          {: Hardware, FreeRTOS, Wi-Fi, Bluetooth, Vibration control, Software, Formation, charging system}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LUXROBO Ltd.}{Seoul, Korea}
+      {Research Engineer}{Mar 2017 -- Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Network Module Firmware(ESP32)}
+          {: FreeRTOS, Wi-Fi, BLE, USART}
+        \resumeItem{OS Development}
+          {: RTOS research, Contiki OS}
+        \resumeItem{Bluetooth 5}
+          {: Nordic nRF52DK, Mesh Network}
+        \resumeItem{NLP}
+          {: Chatscript, Slack-Chatscript Linkage(Python)}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+% --------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming Skills}{: C/C++, Python, MATLAB, Go}
+   }
+   \vspace{-5pt}
+   
+   \item{
+     \textbf{Technologies}{: SketchUp, EasyEDA, Git}
+   }
+   \vspace{-5pt}
+   
+   \item{
+     \textbf{Languages}{: Korean (Native), English (Fluent)}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+        \listItem{Y. Lee, S. Byun, C. Yi, \textbf{J. Jung} and S. A. Lee, "Rolling shutter speckle plethysmography for quantitative cardiovascular monitoring." Biomedical Optics Express, 15(3), 1540-1552, 2024.}
+        \listItem{K. Lee, K. C. Lee, \textbf{J. Jung}, H. Chae, and S. A. Lee, “High-resolution display screen as programmable illumination for Fourier ptychography.” Optics and Lasers in Engineering, 177, 108121, 2024.}
+        \listItem{K. C. Lee, J. Bae, N. Baek, \textbf{J. Jung}, W. Park, and S. A. Lee, “Design and single-shot fabrication of lensless cameras with arbitrary point spread functions,” Optica, vol. 10, no. 1, pp. 72–80, 2023.}
+        \listItem{C. Yi, \textbf{J. Jung}, J. Im, K. C. Lee, E. Chung, and S. A. Lee, “Single-shot temporal speckle correlation imaging using rolling shutter image sensors,” Optica, vol. 9, no. 11, pp. 1227–1237, 2022.}
+        \listItem{N. Baek, Y. Lee, T. Kim, \textbf{J. Jung}, and S. A. Lee, “Lensless polarization camera for single-shot full-stokes imaging,” APL Photonics, 2022.}
+        \listItem{Y. Lee, H. Chae, K. C. Lee, N. Baek, T. Kim, \textbf{J. Jung}, and S. A. Lee, “Fabrication of integrated lensless cameras via uv-imprint lithography,” IEEE Photonics Journal, vol. 14, no. 2, pp. 1–8, 2022.}
+        \listItem{K. C. Lee, K. Lee, \textbf{J. Jung}, S. H. Lee, D. Kim, and S. A. Lee, “A smartphone based fourier ptychographic microscope using the display screen for illumination,” ACS Photonics, vol. 8, no. 5, pp. 1307–1315, 202}
+  \resumeSubHeadingListEnd
+
+%-----------CONFERENCE-----------------
+\section{Conference Presentations (Selected)}
+  \resumeSubHeadingListStart
+    \highlightSubheading
+      {Poster, Advanced Biophotonics Conference, SPIE}{2025}
+      {\textbf{Jaewoo Jung}, Donggeon Bae, Kyung Chul Lee, Seung Ah Lee, \textit{Multi-view Lensless Imaging using 3D Gaussian Splatting}}
+    
+    \highlightSubheading
+      {Poster, ICEIC, IEEE/IEIE}{2023}
+      {\textbf{Jaewoo Jung}, Yujin Lee, Seung Ah Lee, \textit{Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging}}
+    
+    \highlightSubheading
+      {Poster, Advanced Biophotonics Conference, OSK}{2022}
+      {\textbf{Jaewoo Jung}, Yujin Lee, Seung Ah Lee, \textit{Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging}}
+    
+    \highlightSubheading
+      {Oral, IEEE Region 10 Conference, IEEE/IEIE}{2022}
+      {\textbf{Jaewoo Jung}, Yujin Lee, Seung Ah Lee, \textit{Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging}}
+    
+    \highlightSubheading
+      {Oral, 30th ACM International Conference on Multimedia, ACMMM}{2022}
+      {Kyungwon Lee, Yu-Kyung Jang, \textbf{Jaewoo Jung}, Dong Hwan Kim, Hyun Jean Lee, Seung Ah Lee, \textit{EuglPollock: Rethinking Interspecies Collaboration through Art Making}}
+    
+    \highlightSubheading
+      {Poster, Gorden Research Conference Image Science, GRC}{2022}
+      {\textbf{Jaewoo Jung}, Donggeon Bae, Kyung Chul Lee, Nakkyu Baek, Tae Young Kim, Ernest K. Ryu, Seung Ah Lee\textit{Deep Learning Approaches for Image Reconstruction in Lensless Cameras}}
+    
+    \highlightSubheading
+      {Oral, ICCE-ASIA, IEEE/IEIE}{2021}
+      {\textbf{Jaewoo Jung}, Tae Young Kim, Donggeon Bae, Ernest K. Ryu, Seung Ah Lee, \textit{Image Reconstruction in Lensless Cameras with Unrolled Optimization Algorithms}}
+    
+    \highlightSubheading
+      {Poster, Optics and Photonics Congress, OSK}{2021}
+      {\textbf{Jaewoo Jung}, Tae Young Kim, Donggeun Bae, Ernest K. Ryu, Seung Ah Lee, \textit{Unrolled ADMM for Image Reconstruction in Lensless Cameras}}
+    
+    \highlightSubheading
+      {Extended Abstracts(Demo), ACM Conference on Human Factors in Computing Systems, CHI}{2020}
+      {Kyungwon Lee, \textbf{Jaewoo Jung}, Seung Ah Lee, \textit{MicroAquarium: An immersive and interactive installation with living microorganisms}}
+    
+    \highlightSubheading
+      {Oral, ICROS, ICROS}{2018}
+      {Minchul Kim, \textbf{Jaewoo Jung}, DaeEun Kim, \textit{Swarm Robots Using Vibration Motor Control}}
+  
+  \resumeSubHeadingListEnd
+
+%-----------PATENT-----------------
+\section{Patents}
+  \resumeSubHeadingListStart
+        \listItem{S. A. Lee, T. Kim, K. Lee, \textbf{J. Jung}, N. Baek, Apparatus and method for measuring eye movement, US Patent, 12062190}
+        
+        \listItem{S. A. Lee, K. C. Lee, K. Lee, \textbf{J. Jung}, S. H. Lee, Smartphone for obtaining Fourier ptychography image and method for obtaining Fourier ptychography image using smartphone, US Patent, 11880965}
+        
+        \listItem{S. A. Lee, H. Chae, Y. Lee, K. C. Lee, N. Baek, T. Kim, \textbf{J. Jung}, Methods for manufacturing phase masks and lens-less camera module, US Patent, 12108134}
+        
+        \listItem{S. A. Lee, K. C. Lee, N. Baek, W. Park, J.H. Bae, \textbf{J. Jung}, Apparatus and method for manufacturing phase masks for lens-less camera, US Patent, 12343954}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS and HONORS-----------------
+\section{Awards and Honors}
+\resumeSubHeadingListStart
+    \highlightSubheading
+      {\textbf{Best Poster Awards}, SPIE Advanced Biophotonics Conference}{2025}
+      {\textbf{Jaewoo Jung}, Donggeon Bae, Kyung Chul Lee, Seung Ah Lee, \textit{Multi-view Lensless Imaging using 3D Gaussian Splatting}}
+
+    \highlightSubheading
+      {\textbf{Best Poster Awards}, Advanced Biophotonics Conference Optical Society of Korea}{2022}
+      {\textbf{Jaewoo Jung}, Yujin Lee, Seung Ah Lee, \textit{Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging}}
+
+    \highlightSubheading
+      {\textbf{Silver Awards}, 28th Samsung Humantech Paper Awards}{2022}
+      {Kyung Chul Lee, Nakkyu Baek, \textbf{Jaewoo Jung}, Junghyun Bae, Seung Ah Lee, Wook Park, \textit{Design and Fabrication of Custom Phase-Masks for UltraThin Lensless Camera}}
+      
+    \highlightSubheading
+          {\textbf{Grants}, Undergraduate Research Program, KOFAC}{2019}
+          {\textbf{Jaewoo Jung}, Nakkyu Baek, Tae Young Kim, Minhyuk Lee, Seung Ah Lee, \textit{High speed lensless camera for microsaccades measurement}}
+          
+    \highlightSubheading
+          {\textbf{4th Awards}, International Student Car Competition, KTSA}{2019}
+          {Vision Team, \textit{Autonomous driving cart}}
+
+    \highlightSubheading
+          {\textbf{2nd Awards}, International Student Car Competition, KTSA}{2018}
+          {LIDAR Team, \textit{Autonomous driving cart}}
+
+    \highlightSubheading
+          {\textbf{1st Awards}, Embedded Software Contest, KESSIA}{2013}
+          {Hardware Engineer, \textit{Minesweeper Robot using LEGO Mindstorm}}
+    
+    \highlightSubheading
+          {\textbf{1st Awards}, R\&E Festival, KOSAF}{2013}
+          {\textit{Develop Filters made from ESM’s Toxic substances Absorptive Ability}}
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Arxiv Monitoring Bot}
+      {}
+      
+    \resumeSubItem{Dev Environment}
+      {}
+    
+    \resumeSubItem{Various Swarm Behavior Inspired by Nature using Vibration Locomotion Robots}
+      {}
+    
+    \resumeSubItem{Core-XY Autonomous Chess Board}
+      {}
+    
+    \resumeSubItem{Localization using Multiple Gyroscope}
+      {}
+
+    \resumeSubItem{Autonomous Driving Model Car}
+      {}
+    
+    \resumeSubItem{Humanoid(KHR-1)}
+      {}
+
+    \resumeSubItem{LED cube(8×8×8)}
+      {}
+      
+    \resumeSubItem{Robot Soccer}
+      {}
+      
+    \resumeSubItem{Unmanned Aerial Vehicle (Quadcopter)}
+      {}
+      
+    \resumeSubItem{Guitar Effect Pedal}
+      {}
+      
+  \resumeSubHeadingListEnd
+
+%-----------Teaching and Services-----------------
+\section{Teaching and Services}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Introduction To Bioengineering For EE}
+      {(Spring 2023), teaching assistant with Prof. Seung Ah Lee}
+    
+    \resumeSubItem{Introduction To Bioengineering For EE}
+      {(Spring 2021), teaching assistant with Prof. Seung Ah Lee}
+    
+    \resumeSubItem{Analog Electronics Lab.}
+      {(Fall 2020), teaching assistant with Prof. Seung Ah Lee}
+  \resumeSubHeadingListEnd
+
+%-----------Extracurricular Experiment-----------------
+\section{Extracurricular Experiments}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SBTM(Robot club in Yonsei University)}{Seoul, Korea}
+      {President}{Jan 2017 -- Dec 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-------------------------------------------
 \end{document}

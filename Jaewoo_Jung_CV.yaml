@@ -434,6 +434,8 @@ cv:
         location:
         summary:
         highlights:
+          - Replicated and analyzed analog circuits used in bass guitar effects
+          - Designed and fabricated a guitar effect pedal
 
       - name: "Smartphone Application for Chemistry Experiment"
         date: 2014
@@ -442,6 +444,8 @@ cv:
         location:
         summary:
         highlights:
+          - Designed electronic circuits for measurement probe development
+          - Developed a smartphone application for measurement data acquisition
 
       - name: "Minesweeper Robot using LEGO Mindstorm"
         date: 2013
@@ -450,6 +454,8 @@ cv:
         location:
         summary:
         highlights:
+          - Developed line-following robot algorithms using RobotC
+          - Designed and integrated robotic hardware modules for payload deployment
 
       - name: "Develop Filters made from ESM’s Toxic substances Absorptive Ability"
         date: 2013
@@ -458,6 +464,8 @@ cv:
         location:
         summary:
         highlights:
+          - Developed air purifier filters made from ESM's toxic substances absorptive ability
+          - Analyzed airborne pollutants using UV–Vis spectroscopy
 
     Extracurricular Activities:
       - company: SBTM (Robotics Club in Yonsei University)

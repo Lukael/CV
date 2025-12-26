@@ -57,7 +57,8 @@ cv:
         location: Seoul, South Korea
         summary: Imaging intelligence Laboratory, supervised by Prof. Seung Ah Lee
         highlights:
-          - Research on lensless image reconstruction using deep learning
+          - Researched deep learning–based research on lensless image reconstruction
+          - Oversaw GPU server operation, maintenance, and resource management
 
       - company: LUXROBO Co., Ltd.
         position: Research Engineer
@@ -65,9 +66,13 @@ cv:
         start_date: 2023-07
         end_date: 2025-06
         location: Seoul, South Korea
-        summary: Developed MODI Factory
+        summary: MODI Factory
         highlights:
-          - Developed MODI Factory
+          - Designed and developed AI models for automated PCB component placement and routing
+          - Built backend systems in Golang for AI-driven EDA workflows
+          - Deployed and validated AI model serving pipelines
+          - Implemented LLM-based systems for intelligent electronic component categorization and recommendation
+          - Constructed structured databases for electronic component management
 
       - company: Yonsei University
         position: Graduate Research Assistant
@@ -77,7 +82,9 @@ cv:
         location: Seoul, South Korea
         summary: Optical Imaging Laboratory, supervised by Prof. Seung Ah Lee
         highlights:
-          - Developed MODI Factory
+          - Researched deep learning–based research on lensless image reconstruction
+          - Researched lensless holographic microscopy and image reconstruction methods
+          - Oversaw GPU server operation, maintenance, and resource management
 
       - company: Yonsei University
         position: Internship
@@ -87,7 +94,8 @@ cv:
         location: Seoul, South Korea
         summary: Optical Imaging Laboratory, supervised by Prof. Seung Ah Lee
         highlights:
-          - Developed MODI Factory
+          - Researched lensless holographic microscopy and image reconstruction methods
+          - Researched human–biological interactions
 
       - company: Toky
         position: Co-Founder & Engineer
@@ -95,10 +103,10 @@ cv:
         start_date: 2019-07
         end_date: 2020-02
         location: Seoul, South Korea
-        summary: Voice recognition kiost
+        summary: Tabletop voice-controlled kiosk
         highlights:
-          - Voice recognition
-          - Firmware development
+          - Developed and optimized embedded firmware for voice recognition systems
+          - Fine-tuned speech recognition models for on-device inference
 
       - company: Yonsei University
         position: Internship
@@ -108,7 +116,10 @@ cv:
         location: Seoul, South Korea
         summary: Biological Cybernetics Laboratory, supervised by Prof. Dae Eun Kim
         highlights:
-          - Swarm Robotics
+          - Researched swarm robotics using vibration-based locomotion robots
+          - Designed and fabricated experimental robotic hardware
+          - Developed ESP32-based firmware for robot control and communication(Wi-Fi, BLE)
+          - Implemented over-the-air (OTA) update systems for robot firmware updates
 
       - company: LUXROBO Co., Ltd.
         position: Research Engineer
@@ -116,9 +127,12 @@ cv:
         start_date: 2017-03
         end_date: 2017-12
         location: Seoul, South Korea
-        summary: Firmware development
+        summary: Embedded Firmware Development
         highlights:
-          - Developed MODI Factory
+          - Developed ESP32-based firmware for MODI network modules
+          - Architected Wi-Fi and BLE protocol stacks for modular devices
+          - Designed and validated a Bluetooth 5 mesh networking prototype
+          - Conducted RTOS performance and reliability testing using Contiki OS
 
     Skills:
       - label: Languages

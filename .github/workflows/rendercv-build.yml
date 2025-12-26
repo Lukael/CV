@@ -1,11 +1,12 @@
-name: Build LaTeX and commit PDF
+name: Build CV and commit PDF
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
     paths-ignore:
-      - '**.pdf'
-      - 'doc/**'
+      - "**.pdf"
+      - "**.typ"
+      - "doc/**"
 
 permissions:
   contents: write
@@ -20,15 +21,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Build PDF with latexmk
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: lukael_cv.tex
-          latexmk_use_xelatex: false
-          work_in_root_file_dir: true
+      - name: Build CV
+        run: |
+          poetry install
+          poetry run rendercv render Jaewoo_Jung_CV.yaml
 
       - name: Commit PDF back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(pdf): update compiled PDF [skip ci]"
-          file_pattern: lukael_cv.pdf
+          file_pattern: Jaewoo_Jung_CV.pdf

@@ -1,217 +1,219 @@
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#   Usually these files are written by a python script from a template
+#   before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
 *.log
-*.lot
-*.fls
-*.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
 
-## Intermediate documents:
-*.dvi
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+# Flask stuff:
+instance/
+.webassets-cache
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
+# Scrapy stuff:
+.scrapy
 
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
+# Sphinx documentation
+docs/_build/
 
-## Auxiliary and intermediate files from other packages:
-# algorithms
-*.alg
-*.loa
+# PyBuilder
+.pybuilder/
+target/
 
-# achemso
-acs-*.bib
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# amsthm
-*.thm
+# IPython
+profile_default/
+ipython_config.py
 
-# beamer
-*.nav
-*.pre
-*.snm
-*.vrb
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
 
-# changes
-*.soc
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+# Pipfile.lock
 
-# cprotect
-*.cpt
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+# uv.lock
 
-# elsarticle (documentclass of Elsevier journals)
-*.spl
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+# poetry.lock
+# poetry.toml
 
-# endnotes
-*.ent
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
+#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
+# pdm.lock
+# pdm.toml
+.pdm-python
+.pdm-build/
 
-# fixme
-*.lox
+# pixi
+#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
+# pixi.lock
+#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
+#   in the .venv directory. It is recommended not to include this directory in version control.
+.pixi
 
-# feynmf/feynmp
-*.mf
-*.mp
-*.t[1-9]
-*.t[1-9][0-9]
-*.tfm
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
 
-#(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
 
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
-*.glsdefs
+# Redis
+*.rdb
+*.aof
+*.pid
 
-# gnuplottex
-*-gnuplottex-*
+# RabbitMQ
+mnesia/
+rabbitmq/
+rabbitmq-data/
 
-# gregoriotex
-*.gaux
-*.gtex
+# ActiveMQ
+activemq-data/
 
-# hyperref
-*.brf
+# SageMath parsed files
+*.sage.py
 
-# knitr
-*-concordance.tex
-# TODO Comment the next line if you want to keep your tikz graphics files
-*.tikz
-*-tikzDictionary
+# Environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# listings
-*.lol
+# Spyder project settings
+.spyderproject
+.spyproject
 
-# makeidx
-*.idx
-*.ilg
-*.ind
-*.ist
+# Rope project settings
+.ropeproject
 
-# minitoc
-*.maf
-*.mlf
-*.mlt
-*.mtc[0-9]*
-*.slf[0-9]*
-*.slt[0-9]*
-*.stc[0-9]*
+# mkdocs documentation
+/site
 
-# minted
-_minted*
-*.pyg
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
-# morewrites
-*.mw
+# Pyre type checker
+.pyre/
 
-# nomencl
-*.nlo
+# pytype static type analyzer
+.pytype/
 
-# pax
-*.pax
+# Cython debug symbols
+cython_debug/
 
-# pdfpcnotes
-*.pdfpc
+# PyCharm
+#   JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#   be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#   and can be added to the global gitignore or merged into this file.  For a more nuclear
+#   option (not recommended) you can uncomment the following to ignore the entire idea folder.
+# .idea/
 
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
+# Abstra
+#   Abstra is an AI-powered process automation framework.
+#   Ignore directories containing user credentials, local state, and settings.
+#   Learn more at https://abstra.io/docs
+.abstra/
 
-# scrwfile
-*.wrt
+# Visual Studio Code
+#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+#   and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#   you could uncomment the following to ignore the entire vscode folder
+# .vscode/
 
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
+# Ruff stuff:
+.ruff_cache/
 
-# pdfcomment
-*.upa
-*.upb
+# PyPI configuration file
+.pypirc
 
-# pythontex
-*.pytxcode
-pythontex-files-*/
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
 
-# thmtools
-*.loe
+# Streamlit
+.streamlit/secrets.toml
 
-# TikZ & PGF
-*.dpth
-*.md5
-*.auxlock
-
-# todonotes
-*.tdo
-
-# easy-todo
-*.lod
-
-# xindy
-*.xdy
-
-# xypic precompiled matrices
-*.xyc
-
-# endfloat
-*.ttt
-*.fff
-
-# Latexian
-TSWLatexianTemp*
-
-## Editors:
-# WinEdt
-*.bak
-*.sav
-
-# Texpad
-.texpadtmp
-
-# Kile
-*.backup
-
-# KBibTeX
-*~[0-9]*
-
-# auto folder when using emacs and auctex
-/auto/*
-
-# expex forward references with \gathertags
-*-tags.tex
+*.typ
+*.pdf

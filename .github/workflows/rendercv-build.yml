@@ -1,0 +1,33 @@
+name: Build CV and commit PDF
+
+on:
+  pull_request:
+    branches: [master]
+    paths-ignore:
+      - "**.pdf"
+      - "**.typ"
+      - "doc/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build CV
+        run: |
+          poetry install
+          poetry run rendercv render Jaewoo_Jung_CV.yaml
+
+      - name: Commit PDF back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(pdf): update compiled PDF [skip ci]"
+          file_pattern: Jaewoo_Jung_CV.pdf

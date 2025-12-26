@@ -311,7 +311,7 @@ cv:
           - "*J. Jung*"
           - S. A. Lee
         summary:
-        journal: "Extended Abstracts(Demo), ACM Conference on Human Factors in Computing Systems, CHI"
+        journal: "Extended Abstracts(Demo), CHI, ACM"
         date: 2020
 
       - title: Swarm Robots Using Vibration Motor Control
@@ -340,7 +340,7 @@ cv:
 
     Projects:
       - name: "[Arxiv Monitoring Bot](https://github.com/Lukael/arxiv-monitoring-bot)"
-        date:
+        date: 2025
         start_date:
         end_date:
         location:
@@ -348,7 +348,7 @@ cv:
         highlights:
 
       - name: "Dev Environment"
-        date:
+        date: 2024
         start_date:
         end_date:
         location:
@@ -356,7 +356,7 @@ cv:
         highlights:
 
       - name: "Various Swarm Behavior Inspired by Nature using Vibration Locomotion Robots"
-        date:
+        date: 2018
         start_date:
         end_date:
         location:
@@ -364,7 +364,7 @@ cv:
         highlights:
 
       - name: "Core-XY Autonomous Chess Board"
-        date:
+        date: 2019
         start_date:
         end_date:
         location:
@@ -372,7 +372,15 @@ cv:
         highlights:
 
       - name: "Localization using Multiple Gyroscope"
-        date:
+        date: 2018
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Autonomous Driving Cart"
+        date: 2017, 2018
         start_date:
         end_date:
         location:
@@ -380,7 +388,7 @@ cv:
         highlights:
 
       - name: "Autonomous Driving Model Car"
-        date:
+        date: 2016, 2017
         start_date:
         end_date:
         location:
@@ -388,7 +396,7 @@ cv:
         highlights:
 
       - name: "Humanoid"
-        date:
+        date: 2016
         start_date:
         end_date:
         location:
@@ -396,7 +404,7 @@ cv:
         highlights:
 
       - name: "LED cube"
-        date:
+        date: 2016
         start_date:
         end_date:
         location:
@@ -404,7 +412,7 @@ cv:
         highlights:
 
       - name: "Robot Soccer"
-        date:
+        date: 2016
         start_date:
         end_date:
         location:
@@ -412,7 +420,7 @@ cv:
         highlights:
 
       - name: "Unmanned Aerial Vehicle (Quadcopter)"
-        date:
+        date: 2016
         start_date:
         end_date:
         location:
@@ -420,7 +428,31 @@ cv:
         highlights:
 
       - name: "Guitar Effect Pedal"
-        date:
+        date: 2016
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Smartphone Application for Chemistry Experiment"
+        date: 2014
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Minesweeper Robot using LEGO Mindstorm"
+        date: 2013
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Develop Filters made from ESM’s Toxic substances Absorptive Ability"
+        date: 2013
         start_date:
         end_date:
         location:

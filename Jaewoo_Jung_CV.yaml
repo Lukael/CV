@@ -1,0 +1,449 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Jaewoo Jung
+  headline: AI/ML Engineer
+  location: Seoul, South Korea
+  email: dev@lukael.kr
+  photo:
+  phone:
+  website: https://lukael.kr
+  social_networks:
+    - network: LinkedIn
+      username: lukael
+    - network: GitHub
+      username: Lukael
+    - network: Google Scholar
+      username: sFVeMfUAAAAJ
+  custom_connections:
+  sections:
+    Education:
+      - institution: Yonsei University
+        area: Electrical and Electronics Engineering
+        degree: Ph.D Candidate
+        date:
+        start_date: 2020-03
+        end_date: present
+        location: Seoul, South Korea
+        summary:
+        highlights:
+          - "Advisor: Prof. Seung Ah Lee"
+
+      - institution: Yonsei University
+        area: Electrical and Electronics Engineering
+        degree: B.S.
+        date:
+        start_date: 2015-03
+        end_date: 2020-02
+        location: Seoul, South Korea
+        summary:
+
+      - institution: Changwon Science High School
+        area: Chemistry
+        degree:
+        date:
+        start_date: 2013-03
+        end_date: 2015-02
+        location: Changwon, South Korea
+        summary:
+        highlights:
+          - "Early Graduated"
+
+    Experience:
+      - company: Seoul National University
+        position: Research Engineer
+        date:
+        start_date: 2025-07
+        end_date: present
+        location: Seoul, South Korea
+        summary: Imaging intelligence Laboratory, supervised by Prof. Seung Ah Lee
+        highlights:
+          - Research on lensless image reconstruction using deep learning
+
+      - company: LUXROBO Co., Ltd.
+        position: Research Engineer
+        date:
+        start_date: 2023-07
+        end_date: 2025-06
+        location: Seoul, South Korea
+        summary: Developed MODI Factory
+        highlights:
+          - Developed MODI Factory
+
+      - company: Yonsei University
+        position: Graduate Research Assistant
+        date:
+        start_date: 2020-03
+        end_date: 2023-08
+        location: Seoul, South Korea
+        summary: Optical Imaging Laboratory, supervised by Prof. Seung Ah Lee
+        highlights:
+          - Developed MODI Factory
+
+      - company: Yonsei University
+        position: Internship
+        date:
+        start_date: 2019-01
+        end_date: 2020-03
+        location: Seoul, South Korea
+        summary: Optical Imaging Laboratory, supervised by Prof. Seung Ah Lee
+        highlights:
+          - Developed MODI Factory
+
+      - company: Toky
+        position: Co-Founder & Engineer
+        date:
+        start_date: 2019-07
+        end_date: 2020-02
+        location: Seoul, South Korea
+        summary: Voice recognition kiost
+        highlights:
+          - Voice recognition
+          - Firmware development
+
+      - company: Yonsei University
+        position: Internship
+        date:
+        start_date: 2016-08
+        end_date: 2018-12
+        location: Seoul, South Korea
+        summary: Biological Cybernetics Laboratory, supervised by Prof. Dae Eun Kim
+        highlights:
+          - Swarm Robotics
+
+      - company: LUXROBO Co., Ltd.
+        position: Research Engineer
+        date:
+        start_date: 2017-03
+        end_date: 2017-12
+        location: Seoul, South Korea
+        summary: Firmware development
+        highlights:
+          - Developed MODI Factory
+
+    Skills:
+      - label: Languages
+        details: Python, C/C++, Go, MATLAB
+      - label: ML Frameworks
+        details: PyTorch
+      - label: Tools
+        details: Docker, Git, EasyEDA, SketchUp
+      - label: Languages
+        details: Korean (Native), English (Fluent)
+
+    Peer-reviewed Publications:
+      - title: "Rolling shutter speckle plethysmography for quantitative cardiovascular monitoring"
+        authors:
+          - Y. Lee
+          - S. Byun
+          - C. Yi
+          - "*J. Jung*"
+          - S. A. Lee
+        summary:
+        doi: 10.1364/BOE.511755
+        journal: Biomedical Optics Express
+        date: 2024
+
+      - title: "High-resolution display screen as programmable illumination for Fourier ptychography"
+        authors:
+          - K. Lee
+          - K. C. Lee
+          - "*J. Jung*"
+          - H. Chae
+          - S. A. Lee
+        summary:
+        doi: 10.1016/j.optlaseng.2024.108121
+        journal: Optics and Lasers in Engineering
+        date: 2024
+
+      - title: "Design and single-shot fabrication of lensless cameras with arbitrary point spread functions"
+        authors:
+          - K. C. Lee
+          - J. Bae
+          - N. Baek
+          - "*J. Jung*"
+          - W. Park
+          - S. A. Lee
+        summary:
+        doi: 10.1364/OPTICA.466072
+        journal: Optica
+        date: 2023
+
+      - title: "Single-shot temporal speckle correlation imaging using rolling shutter image sensors"
+        authors:
+          - C. Yi
+          - "*J. Jung*"
+          - J. Im
+          - K. C. Lee
+          - E. Chung
+          - S. A. Lee
+        summary:
+        doi: 10.1364/OPTICA.465361
+        journal: Optica
+        date: 2022
+
+      - title: "Lensless polarization camera for single-shot full-stokes imaging"
+        authors:
+          - N. Baek
+          - Y. Lee
+          - T. Kim
+          - "*J. Jung*"
+          - S. A. Lee
+        summary:
+        doi: 10.1063/5.0120465
+        journal: APL Photonics
+        date: 2022
+
+      - title: "Fabrication of integrated lensless cameras via uv-imprint lithography"
+        authors:
+          - Y. Lee
+          - H. Chae
+          - K. C. Lee
+          - N. Baek
+          - T. Kim
+          - "*J. Jung*"
+          - S. A. Lee
+        summary:
+        doi: 10.1109/JPHOT.2022.3157373
+        journal: IEEE Photonics Journal
+        date: 2022
+
+      - title: "A smartphone based fourier ptychographic microscope using the display screen for illumination"
+        authors:
+          - K. C. Lee
+          - K. Lee
+          - "*J. Jung*"
+          - S. H. Lee
+          - D. Kim
+          - S. A. Lee
+        summary:
+        doi: 10.1021/acsphotonics.1c00350
+        journal: ACS Photonics
+        date: 2021
+
+    Patents:
+      - number: Apparatus and method for manufacturing phase masks for lens-less camera (US Patent 12,343,954)
+      - number: Methods for manufacturing phase masks and lens-less camera module (US Patent 12,108,134)
+      - number: Apparatus and method for measuring eye movement (US Patent 12,062,190)
+      - number: Smartphone for obtaining Fourier ptychography image and method for obtaining Fourier ptychography image using smartphone (US Patent 11,880,965)
+
+    Conference Presentations(Selected):
+      - title: "Multi-view Lensless Imaging using 3D Gaussian Splatting"
+        authors:
+          - "*J. Jung*"
+          - D. Bae
+          - K. C. Lee
+          - S. A. Lee
+        summary:
+        journal: "Poster, Advanced Biophotonics Conference, SPIE"
+        date: 2025
+
+      - title: "Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging"
+        authors:
+          - "*J. Jung*"
+          - Y. Lee
+          - S. A. Lee
+        summary:
+        journal: "Poster, Advanced Biophotonics Conference, OSK"
+        date: 2022
+
+      - title: "Jointly Optimized Lensless Imaging System with Trainable Phase Mask for Task-specific Imaging"
+        authors:
+          - "*J. Jung*"
+          - Y. Lee
+          - S. A. Lee
+        summary:
+        journal: "Oral, IEEE Region 10 Conference, IEEE/IEIE"
+        date: 2022
+
+      - title: "EuglPollock: Rethinking Interspecies Collaboration through Art Making"
+        authors:
+          - K. Lee
+          - Y. Jang
+          - "*J. Jung*"
+          - D. H. Kim
+          - H. J. Lee
+          - S. A. Lee
+        summary:
+        journal: "Oral, 30th ACM International Conference on Multimedia, ACMMM"
+        date: 2022
+
+      - title: Deep Learning Approaches for Image Reconstruction in Lensless Cameras
+        authors:
+          - "*J. Jung*"
+          - D. Bae
+          - K. C. Lee
+          - N. Baek
+          - T. Kim
+          - E. K. Ryu
+          - S. A. Lee
+        summary:
+        journal: "Poster, Gorden Research Conference Image Science, GRC"
+        date: 2022
+
+      - title: Image Reconstruction in Lensless Cameras with Unrolled Optimization Algorithms
+        authors:
+          - "*J. Jung*"
+          - T. Kim
+          - D. Bae
+          - E. K. Ryu
+          - S. A. Lee
+        summary:
+        journal: "Oral, ICCE-ASIA, IEEE/IEIE"
+        date: 2021
+
+      - title: "MicroAquarium: An immersive and interactive installation with living microorganisms"
+        authors:
+          - K. Lee
+          - "*J. Jung*"
+          - S. A. Lee
+        summary:
+        journal: "Extended Abstracts(Demo), ACM Conference on Human Factors in Computing Systems, CHI"
+        date: 2020
+
+      - title: Swarm Robots Using Vibration Motor Control
+        authors:
+          - M. Kim
+          - "*J. Jung*"
+          - D. E. Kim
+        summary:
+        journal: "Oral, ICROS, ICROS"
+        date: 2018
+
+    Honors & Awards:
+      - bullet: Best Poster Awards, Advanced Biophotonics Conference, SPIE (2025)
+      - bullet: Best Poster Awards, Advanced Biophotonics Conference, Optical Society of Korea (2022)
+      - bullet: Silver Awards, 28th Samsung Humantech Paper Awards, Samsung Electronics (2022)
+      - bullet: Grants, Undergraduate Research Program, KOFAC (2019)
+      - bullet: 4th Awards, International Student Car Competition, KTSA (2019)
+      - bullet: 2nd Awards, International Student Car Competition, KTSA (2018)
+      - bullet: 1st Awards, Embedded Software Contest, KESSIA (2013)
+      - bullet: 1st Awards, R&E Festival, KOSAF (2013)
+
+    Teaching & Services:
+      - bullet: Introduction To Bioengineering For EE, teaching assistant with Prof. Seung Ah Lee (Spring 2023)
+      - bullet: Introduction To Bioengineering For EE, teaching assistant with Prof. Seung Ah Lee (Spring 2021)
+      - bullet: Analog Electronics Lab., teaching assistant with Prof. Seung Ah Lee (Fall 2020)
+
+    Projects:
+      - name: "[Arxiv Monitoring Bot](https://github.com/Lukael/arxiv-monitoring-bot)"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Dev Environment"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Various Swarm Behavior Inspired by Nature using Vibration Locomotion Robots"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Core-XY Autonomous Chess Board"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Localization using Multiple Gyroscope"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Autonomous Driving Model Car"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Humanoid"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary: (KHR-1)
+        highlights:
+
+      - name: "LED cube"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary: (8×8×8)
+        highlights:
+
+      - name: "Robot Soccer"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Unmanned Aerial Vehicle (Quadcopter)"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+      - name: "Guitar Effect Pedal"
+        date:
+        start_date:
+        end_date:
+        location:
+        summary:
+        highlights:
+
+    Extracurricular Activities:
+      - company: SBTM (Robotics Club in Yonsei University)
+        position: President
+        date:
+        start_date: 2017-01
+        end_date: 2017-12
+        location:
+        summary:
+        highlights:
+
+design:
+  theme: engineeringclassic
+  page:
+    size: a4
+
+locale:
+  language: english
+
+settings:
+  current_date: "2025-12-26"
+  render_command:
+    design:
+    locale:
+    typst_path: Jaewoo_Jung_CV.typ
+    pdf_path: Jaewoo_Jung_CV.pdf
+    markdown_path: Jaewoo_Jung_CV.md
+    html_path: Jaewoo_Jung_CV.html
+    png_path: Jaewoo_Jung_CV.png
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
+  bold_keywords: []
